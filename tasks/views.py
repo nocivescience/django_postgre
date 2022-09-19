@@ -52,3 +52,5 @@ def signin(request):
         else:
             login(request,user)
             return redirect('tasks')
+def create_task(request):
+    return render(request, 'create_task.html')
