@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>home</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quia reprehenderit dolorem labore autem nobis quos delectus aliquid! Voluptas placeat temporibus, illo quis magni dolor accusantium deserunt odio laudantium, ipsa ut, accusamus facere at. Ducimus necessitatibus cum cumque eveniet saepe officiis! Reiciendis aperiam perspiciatis nobis sint aliquam molestiae tenetur nulla rerum illum id enim animi quas suscipit libero nesciunt nemo quidem iure tempore, asperiores similique. Pariatur suscipit corporis, facilis tempore veniam laboriosam unde id nulla inventore accusamus, repudiandae, ipsum voluptate explicabo ratione quibusdam blanditiis quae eligendi vitae tempora laudantium modi excepturi voluptates. Itaque delectus repellat laudantium unde quidem soluta debitis?</p>
+<main class="container py-5">
+    <div class="card card-body">
+        <h2 class="display-1 text-center">home</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quia reprehenderit dolorem labore autem nobis quos delectus aliquid! Voluptas placeat temporibus, illo quis magni dolor accusantium deserunt odio laudantium, ipsa ut, accusamus facere at. Ducimus necessitatibus cum cumque eveniet saepe officiis! Reiciendis aperiam perspiciatis nobis sint aliquam molestiae tenetur nulla rerum illum id enim animi quas suscipit libero nesciunt nemo quidem iure tempore, asperiores similique. Pariatur suscipit corporis, facilis tempore veniam laboriosam unde id nulla inventore accusamus, repudiandae, ipsum voluptate explicabo ratione quibusdam blanditiis quae eligendi vitae tempora laudantium modi excepturi voluptates. Itaque delectus repellat laudantium unde quidem soluta debitis?</p>
+        <div class="text-center">
+            <a class="btn btn-dark w-25" href="{% url 'signin' %}">Signin</a>
+            <a class="btn btn-secondary w-25" href="{% url 'signup' %}">Signout</a>
+        </div>
+    </div>
+</main>
 {% endblock %}
