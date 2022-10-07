@@ -8,15 +8,15 @@
                 {{error}}
                 {% csrf_token %}
                 {{form.as_p}}
-                <button class="btn btn-info">Update</button>
+                <button class="btn btn-info">Actualizar</button>
             </form>
             <form class="card card-body" action="{% url 'complete_task' task.id %}" method="POST">
                 {% csrf_token %}
-                <button class="btn btn-primary">Complete</button>
+                <button class="btn btn-primary">Completado</button>
             </form>
             <form class="card card-body" action="{% url 'delete_task' task.id %}" method="POST">
                 {% csrf_token %}
-                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-danger">Eliminar</button>
             </form>
         </div>
     </div>
