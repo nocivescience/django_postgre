@@ -1,20 +1,13 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<body>
-    <canvas id="Matrix"></canvas>
-    <main class="container py-5">
-        <div class="card card-body">
-            <h2 class="display-1 text-center">Propósito</h2>
-            <p>Está página ha sido creada para satisfacer la necesidad de que los distintos residentes de condominio Altos del Alba 2 y de esta manera centralizar reclamos y necesidades que muchos tienes y que no ve eco en la actual administración</p>
-            <p>La forma de operar de esta página solo requiere su registro de tal forma que su comentario pueda ingresar a la base de datos, no se requerirá nu de su dirección ni de su nombre real pues se busca con esta página que los usuarios se sientan lo más seguros posible al momento de levantar una queja.</p>
-            <p>Si su comentario ha sido solucionado usted podrá eliminarlo y enviarlo a la sección "quejas solucionadas" dando así oportunidad a la respectiva administración encabezada por la señora Sandra Perez como presidenta así como a don Patricio Campos encargado de la empresa Edycon de responder a dichas quejas.</p>
-            <div class="text-center">
-                <a class="btn btn-dark w-25" href="{% url 'signin' %}">Signin</a>
-                <a class="btn btn-secondary w-25" href="{% url 'signup' %}">Signout</a>
-            </div>
+<main class="container py-5">
+    <div class="card card-body">
+        <h2 class="display-1 text-center">Home</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quia reprehenderit dolorem labore autem nobis quos delectus aliquid! Voluptas placeat temporibus, illo quis magni dolor accusantium deserunt odio laudantium, ipsa ut, accusamus facere at. Ducimus necessitatibus cum cumque eveniet saepe officiis! Reiciendis aperiam perspiciatis nobis sint aliquam molestiae tenetur nulla rerum illum id enim animi quas suscipit libero nesciunt nemo quidem iure tempore, asperiores similique. Pariatur suscipit corporis, facilis tempore veniam laboriosam unde id nulla inventore accusamus, repudiandae, ipsum voluptate explicabo ratione quibusdam blanditiis quae eligendi vitae tempora laudantium modi excepturi voluptates. Itaque delectus repellat laudantium unde quidem soluta debitis?</p>
+        <div class="text-center">
+            <a class="btn btn-dark w-25" href="{% url 'signin' %}">Signin</a>
+            <a class="btn btn-secondary w-25" href="{% url 'signup' %}">Signout</a>
         </div>
-    </main>
-    <script src="{% static 'javascript/background.js' %}"></script>
-</body>
+    </div>
+</main>
 {% endblock %}
