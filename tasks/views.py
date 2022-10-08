@@ -84,7 +84,7 @@ def create_task(request):
         except ValueError:
             return render(request, 'create_task.html',{
                 'form': TaskForm,
-                'error': 'Please provide valid datas'
+                'error': 'Provea datos válidos'
             })
 @login_required
 def task_detail(request, task_id):
@@ -105,7 +105,7 @@ def task_detail(request, task_id):
             return render(request, 'task_detail.html',{
                 'task':task,
                 'form':form,
-                'error': 'Error updating the task'
+                'error': 'Error en actualizar el reclamo'
             })
 @login_required
 def complete_task(request,task_id):
